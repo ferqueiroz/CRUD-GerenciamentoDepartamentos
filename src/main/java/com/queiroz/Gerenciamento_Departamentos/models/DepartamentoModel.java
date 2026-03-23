@@ -8,7 +8,7 @@ public class DepartamentoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DPT_ID")
-    private int id;
+    private Long id;
     @Column(name = "DPT_NOME")
     private String nome;
     @Column(name = "DPT_LOCALIZACAO")
@@ -17,11 +17,11 @@ public class DepartamentoModel {
     public DepartamentoModel() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
